@@ -1,0 +1,18 @@
+name: Hello!
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: say hello
+        run: echo "Hello world!"
+      - name: say date
+        run: date
+      - name : ls
+        run: ls
